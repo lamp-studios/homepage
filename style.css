@@ -1,0 +1,123 @@
+/* 98.css v0.1.21 (MIT) https://github.com/jdan/98.css */
+/* this is just for the retro style for my website lol */
+
+@font-face {
+    font-family: 'Tahoma XP';
+    src: url(src/assets/fonts/tahoma_regular_font-webfont.woff2);
+}
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://unpkg.com/98.css@0.1.21/dist/ms_sans_serif.woff2") format("woff2"),
+       url("https://unpkg.com/98.css@0.1.21/dist/ms_sans_serif.woff") format("woff");
+}
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://unpkg.com/98.css@0.1.21/dist/ms_sans_serif_bold.woff2") format("woff2"),
+       url("https://unpkg.com/98.css@0.1.21/dist/ms_sans_serif_bold.woff") format("woff");
+}
+
+button {
+    -webkit-font-smoothing: none;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 13px;
+    background: silver;
+    border: none;
+    border-radius: 0;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+               inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    box-sizing: border-box;
+    color: transparent;
+    text-shadow: 0 0 #222;
+    min-height: 23px;
+    min-width: 75px;
+    padding: 0 12px;
+}
+
+button:not(:disabled):active {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
+              inset -2px -2px #dfdfdf, inset 2px 2px grey;
+  text-shadow: 1px 1px #222;
+}
+
+button:focus {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+button::-moz-focus-inner { border: 0; }
+
+button.default {
+  box-shadow: inset -2px -2px #0a0a0a, inset 1px 1px #0a0a0a, inset 2px 2px #fff,
+              inset -3px -3px grey, inset 3px 3px #dfdfdf;
+}
+button.default:not(:disabled):active {
+  box-shadow: inset 2px 2px #0a0a0a, inset -1px -1px #0a0a0a, inset -2px -2px #fff,
+              inset 3px 3px grey, inset -3px -3px #dfdfdf;
+}
+
+/* ________________________________________________________________________________________ */
+/* this is where my actual website CSS starts */
+
+html {
+    cursor: url("src/assets/cursor/normal.cur"), default;
+}
+
+/* iframe {
+    cursor: url("src/assets/cursor/normal.cur"), default;
+} */
+
+button, a {
+    cursor: url(src/assets/cursor/pointer.cur), pointer;
+}
+
+body {
+    background-color: black;
+    font-family: 'Tahoma XP';
+}
+
+.nav button {
+    margin-right: 10px;
+    margin-left: 10px;
+    /* background-image: linear-gradient(to bottom, rgb(159, 247, 247), white); */
+    /* border-color: rgb(54, 53, 53); */
+    /* background-image: #d3d0c9;
+    box-shadow: grey 100px; */
+    /* font-size: 17px; */
+}
+
+#box {
+    width: fit-content;
+    height: fit-content;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: auto;
+    /* background-image: linear-gradient(rgb(167, 255, 255), white); */
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+    /* background-color: green; <-- For testing purposes */
+}
+
+.centered #some-text {
+    text-align: center;
+    color: white;
+}
+
+/*
+Source - https://stackoverflow.com/a/15533756
+Posted by couzzi, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-29, License - CC BY-SA 4.0
+*/
+
+audio { display:none;}
+
+#pause_hidden {
+    display: none;
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title></title>
+</head>
+<body onpointerdown="music.play(); document.getElementById('pause_hidden').style.setProperty('display', 'none');">
+<!--
+Source - https://stackoverflow.com/a/41906135
+Posted by Ruchika BN, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-29, License - CC BY-SA 3.0
+-->
+
+<div id="player">
+    <audio controls autoplay hidden id="music">
+     <source src="src/Ozowa - Nuvfr.mp3" type="audio/mpeg">
+                unsupported !! 
+    </audio>
+</div>
+<header>
+    <div id="box">
+        <div class="nav" id="nav">
+            <button id="home">Home</button>
+            <button id="about">About</button>
+            <button id="switch-mode" onclick="switchlightmode();">Switch Theme</button>
+        </div>
+        <br>
+    </div>
+</header>
+<br>
+<div class="centered">
+    <div id="some-text">
+        <h1>Lamp Studios</h1>
+        <p style="font-size: 10px;">You might need to enable autoplay to hear the song.</p>
+        <p style="font-size: 12px;" id="pause_hidden">Un-pause the song by clicking anywhere with your mouse.</p>
+        <a href="about.html">Learn about us here</a>
+        <!-- <p>Lamp Studios is a simple hobby studio that isn't actually registered yet, I'm not an actual company.</p> -->
+        <br><br>
+        <iframe 
+            title="Our guestbook"
+            src="https://lampyt.atabook.org"
+            width="450px" 
+            height="600"
+            frameborder="0">
+        </iframe>
+        <!-- <noscript>hi please enable js for music thank you</noscript> -->
+        <br><br><br><br>  <!-- what am i doing -->
+    </div>
+    <div id="buttons"> <!-- buttons xD -->
+        <a href="https://www.debian.org"><img src="src/debian.gif"></img></a>
+        <img src="src/anybrowser.gif"></img>
+        <a href="https://www.firefox.com"><img src="src/getfirefox.gif"></img></a>
+        <a href="https://www.kernel.org"><img src="src/penguin.gif" width="100px"></img></a>
+        <a href="https://winamp.com"><img src="src/winamp.gif" width="100px"></img></a>
+        <br>
+        <a href="https://www.newgrounds.com"><img src="src/newgrounds.jpg" width="100px"></img></a>
+        <a href="https://www.rarlab.com"><img src="src/winrar.gif"></img></a>
+        <a href="https://discord.gg/pBnP4qkaNw"><img src="src/discord2.gif"></img></a>
+        <img src="src/xp.gif"></img>
+        <img src="src/hatemac_b.gif"></img>
+        <br>
+        <img src="src/hicolor.gif"></img>
+    </div>
+    <footer style=margin-top:400px;>
+        <!-- <img src="src/suggestion.png"></img> -->
+        <br><br><br><br><br>
+        <img src="src/underconstruction.gif"></img>
+        <!-- <br><br> -->
+        <!-- <p style="text-align:center;" id="blinking">hi</p> -->
+    </footer>
+</div>
+
+
+</body>
+</html>
